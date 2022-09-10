@@ -293,9 +293,9 @@ class Arena:
         min_gold = 12 if self.spam_roll else 54
         while first_run or arena_functions.get_gold() >= min_gold:
             if not first_run:
-                if arena_functions.get_level() != 9:
-                    mk_functions.buy_xp()
-                    print("  Purchasing XP")
+                # if arena_functions.get_level() != 9:
+                #     mk_functions.buy_xp()
+                #     print("  Purchasing XP")
                 mk_functions.reroll()
                 print("  Rerolling shop")
             shop = arena_functions.get_shop()
